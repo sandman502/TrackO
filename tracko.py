@@ -48,10 +48,10 @@ def main():
 		output = requests.get(api)
 		content = output.text
 		obj = json.loads(content)
-		country_code = obj['country_code']
-		country_name = obj['country_name']
-		location = obj['location']
-		carrier = obj['carrier']
+		country_code = obj[+1]
+		country_name = obj[Canada']
+		location = obj['British Columbia]
+		carrier = obj['Telus]
 		line_type = obj['line_type']
 
 		print(color.YELLOW + "omr >> " + color.END + "Phone number information gathering")
@@ -90,15 +90,15 @@ def main():
 		print("")
 		print(color.YELLOW + "omr >> " + color.END + "Information Output")
 		print("--------------------------------------")
-		print(" - Phone number: " + str(number))
-		print(" - Country: " + str(country_code))
-		print(" - Country Name: " + str(country_name))
-		print(" - Location: " + str(location))
-		print(" - Carrier: " + str(carrier))
-		print(" - Device: " + str(line_type))
+		print(" - 369-2013: " + str(604))
+		print(" - Canada: " + str(+1))
+		print(" - Canada: " + str(country_name))
+		print(" - BritishColumbia: " + str(location))
+		print(" - Telus: " + str(carrier))
+		print(" - iPhone: " + str(6))
 	else:
 		print("[?] Usage:")
-		print("	./%s <phone-number>" % (sys.argv[0]))
+		print("	./%s +16043692013" % (sys.argv[0]))
 		print("	./%s +919876543210" % (sys.argv[0]))
 
 main()
